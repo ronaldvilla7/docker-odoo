@@ -2,4 +2,5 @@
 .resources/Dockerfile
 .resources/dbconfigs/pg_hba.conf
 **/.vscode/
+**/__pycache__/
 venv

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Menú Principal Raíz para Nómina (Sustituyendo el Enterprise/BI) -->
+    <menuitem id="menu_hr_payslip_root"
+              name="Nómina"
+              web_icon="hr_contract_benefits,static/description/icon.png"
+              sequence="120"/>
+
+    <!-- Submenú: Recibos de Nómina -->
+    <menuitem id="menu_hr_payslip_main"
+              name="Recibos de Nómina"
+              parent="menu_hr_payslip_root"
+              action="action_hr_payslip"
+              sequence="10"/>
+
+    <!-- Submenú: Configuración -->
+    <menuitem id="menu_hr_payslip_configuration"
+              name="Configuración"
+              parent="menu_hr_payslip_root"
+              sequence="100"/>
+
+    <!-- Configuración > Reglas de Beneficios -->
+    <menuitem id="menu_hr_contract_benefit_rule"
+              name="Reglas de Beneficios"
+              parent="menu_hr_payslip_configuration"
+              action="action_hr_contract_benefit_rule"
+              sequence="10"/>
+</odoo>
