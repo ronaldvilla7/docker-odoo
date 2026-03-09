@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Agregar las etiquetas al formulario de Producto -->
+    <record id="view_product_template_form_inherit_tags" model="ir.ui.view">
+        <field name="name">product.template.form.inherit.tags</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='categ_id']" position="after">
+                <field name="storage_tag_ids" widget="many2many_tags" options="{'color_field': 'color', 'no_create_edit': True}"/>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Modificar Kanban view de productos para mostrar las etiquetas coloridas -->
+    <record id="view_product_template_kanban_inherit_tags" model="ir.ui.view">
+        <field name="name">product.template.kanban.inherit.tags</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_kanban_details')]" position="inside">
+                <div class="o_kanban_tags_section mt-1">
+                    <field name="storage_tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Búsqueda/Agrupación por Múltiples Etiquetas -->
+    <record id="view_product_template_search_inherit_tags" model="ir.ui.view">
+        <field name="name">product.template.search.inherit.tags</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <field name="storage_tag_ids" string="Etiqueta de Almacenamiento"/>
+            </xpath>
+            <xpath expr="//group" position="inside">
+                <filter string="Etiqueta de Almacenamiento" name="groupby_storage_tags" context="{'group_by':'storage_tag_ids'}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>
