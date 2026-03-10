@@ -1,0 +1,101 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_financial_kpi
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 12:00+0000\n"
+"PO-Revision-Date: 2024-03-10 12:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_VE\n"
+
+#. module: account_financial_kpi
+msgid "Calculation Formula"
+msgstr "Fórmula de Cálculo"
+
+#. module: account_financial_kpi
+msgid "Create the first Financial KPI"
+msgstr "Crear el primer Indicador Financiero (KPI)"
+
+#. module: account_financial_kpi
+msgid "Critical Threshold (Red)"
+msgstr "Umbral Crítico (Rojo)"
+
+#. module: account_financial_kpi
+msgid "Current Value"
+msgstr "Valor Actual"
+
+#. module: account_financial_kpi
+msgid "Data and Calculation"
+msgstr "Datos y Cálculo"
+
+#. module: account_financial_kpi
+msgid "Example: bal(\"100\") / bal(\"200\"). Use bal(\"account_code\") to get the balance."
+msgstr "Ejemplo: bal(\"100\") / bal(\"200\"). Usa bal(\"codigo_cuenta\") para obtener el balance."
+
+#. module: account_financial_kpi
+msgid "Financial Health (KPIs)"
+msgstr "Salud Financiera (KPIs)"
+
+#. module: account_financial_kpi
+msgid "Financial Health Indicator"
+msgstr "Indicador de Salud Financiera"
+
+#. module: account_financial_kpi
+msgid "Financial Indicators"
+msgstr "Indicadores Financieros"
+
+#. module: account_financial_kpi
+msgid "Higher is Better (e.g. Margin)"
+msgstr "Mayor es Mejor (Ej: Margen)"
+
+#. module: account_financial_kpi
+msgid "Indicator Name"
+msgstr "Nombre del Indicador"
+
+#. module: account_financial_kpi
+msgid "KPI Configuration"
+msgstr "Configuración de KPI"
+
+#. module: account_financial_kpi
+msgid "KPIs Configuration"
+msgstr "Configuración de KPIs"
+
+#. module: account_financial_kpi
+msgid "Lower is Better (e.g. Debt)"
+msgstr "Menor es Mejor (Ej: Deuda)"
+
+#. module: account_financial_kpi
+msgid "Status (Color)"
+msgstr "Estado (Color)"
+
+#. module: account_financial_kpi
+msgid "Threshold Direction"
+msgstr "Dirección de Umbrales"
+
+#. module: account_financial_kpi
+msgid "Thresholds (Traffic Light)"
+msgstr "Umbrales (Semáforo)"
+
+#. module: account_financial_kpi
+msgid "Warning Threshold (Yellow)"
+msgstr "Umbral de Advertencia (Amarillo)"
+
+#. module: account_financial_kpi
+msgid "bal('11') / bal('21')"
+msgstr "bal('11') / bal('21')"
+
+#. module: account_financial_kpi
+msgid "e.g., Current Liquidity"
+msgstr "Ej: Liquidez Corriente"
+
+#. module: account_financial_kpi
+msgid "threshold_warning', 'threshold_critical', 'threshold_direction"
+msgstr "threshold_warning', 'threshold_critical', 'threshold_direction"
+

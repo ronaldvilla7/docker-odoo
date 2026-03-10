@@ -2,21 +2,21 @@ from odoo import models, fields
 
 class HrContractBenefitRule(models.Model):
     _name = 'hr.contract.benefit.rule'
-    _description = 'Regla Automática de Beneficio Laboral'
+    _description = 'Automatic Labor Benefit Rule'
 
-    name = fields.Char(string='Nombre del Beneficio', required=True)
+    name = fields.Char(string='Benefit Name', required=True)
     contract_type_benefit = fields.Selection([
-        ('full_time', 'Tiempo Completo'),
-        ('part_time', 'Medio Tiempo'),
-        ('temporary', 'Temporal'),
-        ('internship', 'Pasantía/Prácticas'),
-    ], string='Aplicable a (Tipo de Contrato)', required=True)
+        ('full_time', 'Full Time'),
+        ('part_time', 'Part Time'),
+        ('temporary', 'Temporary'),
+        ('internship', 'Internship/Practices'),
+    ], string='Applicable To (Contract Type)', required=True)
     
     amount_type = fields.Selection([
-        ('fixed', 'Monto Fijo'),
-        ('percent', 'Porcentaje del Salario Base'),
-    ], string='Tipo de Cálculo', required=True, default='fixed')
+        ('fixed', 'Fixed Amount'),
+        ('percent', 'Percentage of Base Salary'),
+    ], string='Calculation Type', required=True, default='fixed')
     
-    amount = fields.Float(string='Valor (Monto o %)', required=True, default=0.0)
+    amount = fields.Float(string='Value (Amount or %)', required=True, default=0.0)
     
-    active = fields.Boolean(string='Activo', default=True)
+    active = fields.Boolean(string='Active', default=True)

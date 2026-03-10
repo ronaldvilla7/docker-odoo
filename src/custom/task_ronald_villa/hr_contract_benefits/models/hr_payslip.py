@@ -3,23 +3,23 @@ from odoo.exceptions import UserError
 
 class HrPayslip(models.Model):
     _name = 'hr.payslip'
-    _description = 'Recibo de Nómina (Custom CE)'
+    _description = 'Payslip (Custom CE)'
 
-    name = fields.Char(string='Referencia del Recibo', required=True, copy=False, default=lambda self: _('Nuevo'))
-    employee_id = fields.Many2one('hr.employee', string='Empleado', required=True)
-    contract_id = fields.Many2one('hr.contract', string='Contrato', required=True, domain="[('employee_id', '=', employee_id)]")
+    name = fields.Char(string='Payslip Reference', required=True, copy=False, default=lambda self: _('Nuevo'))
+    employee_id = fields.Many2one('hr.employee', string='Employee', required=True)
+    contract_id = fields.Many2one('hr.contract', string='Contract', required=True, domain="[('employee_id', '=', employee_id)]")
     
-    date_from = fields.Date(string='Fecha Inicio', required=True)
-    date_to = fields.Date(string='Fecha Fin', required=True)
+    date_from = fields.Date(string='Start Date', required=True)
+    date_to = fields.Date(string='End Date', required=True)
     
     state = fields.Selection([
-        ('draft', 'Borrador'),
-        ('verify', 'En Espera'),
-        ('done', 'Realizado'),
-        ('cancel', 'Cancelado')
-    ], string='Estado', default='draft', tracking=True)
+        ('draft', 'Draft'),
+        ('verify', 'Waiting'),
+        ('done', 'Done'),
+        ('cancel', 'Cancelled')
+    ], string='Status', default='draft', tracking=True)
 
-    line_ids = fields.One2many('hr.payslip.line', 'payslip_id', string='Líneas de Nómina')
+    line_ids = fields.One2many('hr.payslip.line', 'payslip_id', string='Payroll Lines')
 
     @api.onchange('employee_id')
     def _onchange_employee_id(self):
@@ -74,9 +74,9 @@ class HrPayslip(models.Model):
 
 class HrPayslipLine(models.Model):
     _name = 'hr.payslip.line'
-    _description = 'Línea de Recibo de Nómina'
+    _description = 'Payslip Line'
 
-    payslip_id = fields.Many2one('hr.payslip', string='Recibo de Nómina', required=True, ondelete='cascade')
-    name = fields.Char(string='Concepto', required=True)
-    amount = fields.Float(string='Monto', required=True)
-    is_base = fields.Boolean(string='Es Salario Base', default=False)
+    payslip_id = fields.Many2one('hr.payslip', string='Payslip', required=True, ondelete='cascade')
+    name = fields.Char(string='Concept', required=True)
+    amount = fields.Float(string='Amount', required=True)
+    is_base = fields.Boolean(string='Is Base Salary', default=False)

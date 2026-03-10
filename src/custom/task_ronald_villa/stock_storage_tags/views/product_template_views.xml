@@ -33,10 +33,10 @@
         <field name="inherit_id" ref="product.product_template_search_view"/>
         <field name="arch" type="xml">
             <xpath expr="//search" position="inside">
-                <field name="storage_tag_ids" string="Etiqueta de Almacenamiento"/>
+                <field name="storage_tag_ids" string="Storage Tag"/>
             </xpath>
             <xpath expr="//group" position="inside">
-                <filter string="Etiqueta de Almacenamiento" name="groupby_storage_tags" context="{'group_by':'storage_tag_ids'}"/>
+                <filter string="Storage Tag" name="groupby_storage_tags" context="{'group_by':'storage_tag_ids'}"/>
             </xpath>
         </field>
     </record>

@@ -2,7 +2,7 @@
 <odoo>
     <!-- Action for the Critical Stock Dashboard -->
     <record id="action_stock_critical_dashboard" model="ir.actions.act_window">
-        <field name="name">Tablero de Stock Crítico</field>
+        <field name="name">Tablero de Critical Stock</field>
         <field name="res_model">product.template</field>
         <field name="view_mode">kanban,tree,form</field>
         <field name="domain">[('is_critical_stock', '=', True)]</field>
@@ -16,9 +16,9 @@
         <field name="inherit_id" ref="product.product_template_search_view"/>
         <field name="arch" type="xml">
             <xpath expr="//search" position="inside">
-                <filter string="En Stock Crítico" name="critical_stock" domain="[('is_critical_stock', '=', True)]"/>
+                <filter string="In Critical Stock" name="critical_stock" domain="[('is_critical_stock', '=', True)]"/>
                 <group expand="0" string="Group By">
-                    <filter string="Categoría" name="group_by_categ_id" context="{'group_by': 'categ_id'}"/>
+                    <filter string="Category" name="group_by_categ_id" context="{'group_by': 'categ_id'}"/>
                 </group>
             </xpath>
         </field>
@@ -26,7 +26,7 @@
 
     <!-- Menu in Inventory root-->
     <menuitem id="menu_stock_critical_dashboard"
-              name="Stock Crítico"
+              name="Critical Stock"
               parent="stock.menu_stock_root"
               action="action_stock_critical_dashboard"
               sequence="100"/>

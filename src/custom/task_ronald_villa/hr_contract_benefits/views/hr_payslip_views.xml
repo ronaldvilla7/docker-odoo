@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Nóminas (Payslip) -->
+    <!-- Payrolls (Payslip) -->
     <record id="view_hr_payslip_list" model="ir.ui.view">
         <field name="name">hr.payslip.list</field>
         <field name="model">hr.payslip</field>
         <field name="arch" type="xml">
-            <tree string="Recibos de Nómina">
+            <tree string="Payslips">
                 <field name="name"/>
                 <field name="employee_id"/>
                 <field name="date_from"/>
@@ -19,17 +19,17 @@
         <field name="name">hr.payslip.form</field>
         <field name="model">hr.payslip</field>
         <field name="arch" type="xml">
-            <form string="Recibo de Nómina">
+            <form string="Payslip">
                 <header>
-                    <button name="compute_sheet" string="Calcular Boleta" type="object" class="btn-primary" invisible="state != 'draft'"/>
-                    <button name="action_payslip_done" string="Confirmar" type="object" class="btn-primary" invisible="state != 'draft'"/>
-                    <button name="action_payslip_draft" string="Volver a Borrador" type="object" invisible="state == 'draft'"/>
+                    <button name="compute_sheet" string="Calculate Payslip" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_payslip_done" string="Confirm" type="object" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_payslip_draft" string="Set to Draft" type="object" invisible="state == 'draft'"/>
                     <field name="state" widget="statusbar" statusbar_visible="draft,done"/>
                 </header>
                 <sheet>
                     <div class="oe_title">
                         <label for="name" class="oe_edit_only"/>
-                        <h1><field name="name" placeholder="Referencia (Ej: NÓMINA-2023-OCT)"/></h1>
+                        <h1><field name="name" placeholder="Reference (e.g. PAYROLL-2023-OCT)"/></h1>
                     </div>
                     <group>
                         <group>
@@ -42,7 +42,7 @@
                         </group>
                     </group>
                     <notebook>
-                        <page string="Líneas de Pago" name="payslip_lines">
+                        <page string="Payslip Lines" name="payslip_lines">
                             <field name="line_ids" readonly="state != 'draft'">
                                 <tree editable="bottom">
                                     <field name="name"/>
@@ -59,7 +59,7 @@
 
     <!-- Acción de Ventana para Recibos -->
     <record id="action_hr_payslip" model="ir.actions.act_window">
-        <field name="name">Recibos de Nómina</field>
+        <field name="name">Payslips</field>
         <field name="res_model">hr.payslip</field>
         <field name="view_mode">tree,form</field>
     </record>

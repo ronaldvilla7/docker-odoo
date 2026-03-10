@@ -1,0 +1,57 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_critical_alert
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 12:00+0000\n"
+"PO-Revision-Date: 2024-03-10 12:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_VE\n"
+
+#. module: stock_critical_alert
+msgid "=', 'notification"
+msgstr "=', 'notification"
+
+#. module: stock_critical_alert
+msgid "=', self.product_tmpl.id), ('model', '=', 'product.template"
+msgstr "=', self.product_tmpl.id), ('model', '=', 'product.template"
+
+#. module: stock_critical_alert
+msgid "Category"
+msgstr "Categoría"
+
+#. module: stock_critical_alert
+msgid "Critical Stock"
+msgstr "Stock Crítico"
+
+#. module: stock_critical_alert
+msgid "Group By"
+msgstr "Group By"
+
+#. module: stock_critical_alert
+msgid "In Critical Stock"
+msgstr "En Stock Crítico"
+
+#. module: stock_critical_alert
+msgid "Indicates if the product is currently below minimum stock"
+msgstr "Indica si el producto está actualmente por debajo del stock mínimo"
+
+#. module: stock_critical_alert
+msgid "Minimum Stock"
+msgstr "Stock Mínimo"
+
+#. module: stock_critical_alert
+msgid "Stock Alerts"
+msgstr "Alertas de Stock"
+
+#. module: stock_critical_alert
+msgid "Threshold to generate critical stock alerts"
+msgstr "Umbral para generar alertas de stock crítico"
+

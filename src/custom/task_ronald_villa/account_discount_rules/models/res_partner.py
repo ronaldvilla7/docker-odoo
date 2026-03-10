@@ -4,7 +4,7 @@ class ResPartner(models.Model):
     _inherit = 'res.partner'
 
     customer_type = fields.Selection([
-        ('retail', 'Minorista'),
-        ('wholesale', 'Mayorista'),
+        ('retail', 'Retail'),
+        ('wholesale', 'Wholesale'),
         ('vip', 'VIP')
-    ], string='Tipo de Cliente', help='Define las políticas de descuento aplicables a este cliente.', default='retail')
+    ], string='Customer Type', help='Define the discount policies applicable to this customer.', default='retail')

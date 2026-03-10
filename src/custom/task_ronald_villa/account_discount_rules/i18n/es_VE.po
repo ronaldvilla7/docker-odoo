@@ -1,0 +1,65 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_discount_rules
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 12:00+0000\n"
+"PO-Revision-Date: 2024-03-10 12:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_VE\n"
+
+#. module: account_discount_rules
+msgid "Active"
+msgstr "Activo"
+
+#. module: account_discount_rules
+msgid "Customer Type"
+msgstr "Tipo de Cliente"
+
+#. module: account_discount_rules
+msgid "Define the discount policies applicable to this customer."
+msgstr "Define las políticas de descuento aplicables a este cliente."
+
+#. module: account_discount_rules
+msgid "Description"
+msgstr "Descripción"
+
+#. module: account_discount_rules
+msgid "Discount Percentage (%)"
+msgstr "Porcentaje de Descuento (%)"
+
+#. module: account_discount_rules
+msgid "Discount Rule"
+msgstr "Regla de Descuento"
+
+#. module: account_discount_rules
+msgid "Discount Rule by Customer Type"
+msgstr "Regla de Descuento por Tipo de Cliente"
+
+#. module: account_discount_rules
+msgid "Discount Rules"
+msgstr "Reglas de Descuento"
+
+#. module: account_discount_rules
+msgid "Retail"
+msgstr "Minorista"
+
+#. module: account_discount_rules
+msgid "VIP"
+msgstr "VIP"
+
+#. module: account_discount_rules
+msgid "Wholesale"
+msgstr "Mayorista"
+
+#. module: account_discount_rules
+msgid "e.g., Regular VIP Discount"
+msgstr "Ej: Descuento Regulares VIP"
+

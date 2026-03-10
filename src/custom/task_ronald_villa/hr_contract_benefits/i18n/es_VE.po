@@ -1,0 +1,205 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_contract_benefits
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 12:00+0000\n"
+"PO-Revision-Date: 2024-03-10 12:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_VE\n"
+
+#. module: hr_contract_benefits
+msgid "=', 'open"
+msgstr "=', 'open"
+
+#. module: hr_contract_benefits
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_contract_benefits
+msgid "Amount"
+msgstr "Monto"
+
+#. module: hr_contract_benefits
+msgid "Applicable To (Contract Type)"
+msgstr "Aplicable a (Tipo de Contrato)"
+
+#. module: hr_contract_benefits
+msgid "Application Criterion"
+msgstr "Criterio de Aplicación"
+
+#. module: hr_contract_benefits
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: hr_contract_benefits
+msgid "Automatic Labor Benefit Rule"
+msgstr "Regla Automática de Beneficio Laboral"
+
+#. module: hr_contract_benefits
+msgid "Benefit Name"
+msgstr "Nombre del Beneficio"
+
+#. module: hr_contract_benefits
+msgid "Benefit Rule"
+msgstr "Regla de Beneficio"
+
+#. module: hr_contract_benefits
+msgid "Benefit Rules"
+msgstr "Reglas de Beneficio"
+
+#. module: hr_contract_benefits
+msgid "Benefit Rules"
+msgstr "Reglas de Beneficios"
+
+#. module: hr_contract_benefits
+msgid "Calculate Payslip"
+msgstr "Calcular Boleta"
+
+#. module: hr_contract_benefits
+msgid "Calculation Type"
+msgstr "Tipo de Cálculo"
+
+#. module: hr_contract_benefits
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: hr_contract_benefits
+msgid "Classification used for automatic payroll and benefit rules."
+msgstr "Clasificación utilizada para las reglas automáticas de nómina y beneficios."
+
+#. module: hr_contract_benefits
+msgid "Concept"
+msgstr "Concepto"
+
+#. module: hr_contract_benefits
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: hr_contract_benefits
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: hr_contract_benefits
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_contract_benefits
+msgid "Contract Type (Benefits)"
+msgstr "Tipo de Contrato (Beneficios)"
+
+#. module: hr_contract_benefits
+msgid "Done"
+msgstr "Realizado"
+
+#. module: hr_contract_benefits
+msgid "Draft"
+msgstr "Borrador"
+
+#. module: hr_contract_benefits
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_contract_benefits
+msgid "End Date"
+msgstr "Fecha Fin"
+
+#. module: hr_contract_benefits
+msgid "Fixed Amount"
+msgstr "Monto Fijo"
+
+#. module: hr_contract_benefits
+msgid "Full Time"
+msgstr "Tiempo Completo"
+
+#. module: hr_contract_benefits
+msgid "Internship/Practices"
+msgstr "Pasantía/Prácticas"
+
+#. module: hr_contract_benefits
+msgid "Is Base Salary"
+msgstr "Es Salario Base"
+
+#. module: hr_contract_benefits
+msgid "Monetary Calculation"
+msgstr "Cálculo Monetario"
+
+#. module: hr_contract_benefits
+msgid "Part Time"
+msgstr "Medio Tiempo"
+
+#. module: hr_contract_benefits
+msgid "Payroll"
+msgstr "Nómina"
+
+#. module: hr_contract_benefits
+msgid "Payslip"
+msgstr "Recibo de Nómina"
+
+#. module: hr_contract_benefits
+msgid "Payslip (Custom CE)"
+msgstr "Recibo de Nómina (Custom CE)"
+
+#. module: hr_contract_benefits
+msgid "Payslip Line"
+msgstr "Línea de Recibo de Nómina"
+
+#. module: hr_contract_benefits
+msgid "Payslip Lines"
+msgstr "Líneas de Pago"
+
+#. module: hr_contract_benefits
+msgid "Payslip Reference"
+msgstr "Referencia del Recibo"
+
+#. module: hr_contract_benefits
+msgid "Payslips"
+msgstr "Recibos de Nómina"
+
+#. module: hr_contract_benefits
+msgid "Percentage of Base Salary"
+msgstr "Porcentaje del Salario Base"
+
+#. module: hr_contract_benefits
+msgid "Reference (e.g. PAYROLL-2023-OCT)"
+msgstr "Referencia (Ej: NÓMINA-2023-OCT)"
+
+#. module: hr_contract_benefits
+msgid "Set to Draft"
+msgstr "Volver a Borrador"
+
+#. module: hr_contract_benefits
+msgid "Start Date"
+msgstr "Fecha Inicio"
+
+#. module: hr_contract_benefits
+msgid "Status"
+msgstr "Estado"
+
+#. module: hr_contract_benefits
+msgid "Temporary"
+msgstr "Temporal"
+
+#. module: hr_contract_benefits
+msgid "Value (Amount or %)"
+msgstr "Valor (Monto o %)"
+
+#. module: hr_contract_benefits
+msgid "Waiting"
+msgstr "En Espera"
+
+#. module: hr_contract_benefits
+msgid "e.g., Food Bonus"
+msgstr "Ej: Bono de Alimentación"
+
+#. module: hr_contract_benefits
+msgid "payslip_id', string='Payroll Lines"
+msgstr "payslip_id', string='Líneas de Nómina"
+

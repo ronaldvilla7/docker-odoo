@@ -13,25 +13,25 @@ class TestHrContractBenefits(TransactionCase):
         # Limpiar basuras de pruebas previas en la bd local
         self.BenefitRule.search([]).write({'active': False})
 
-        # Empleado 1
+        # Employee 1
         self.employee_full = self.Employee.create({
             'name': 'Juan Pérez (Full Time)',
         })
-        # Contrato Full Time (con tipo de beneficio marcado)
+        # Contract Full Time (con tipo de beneficio marcado)
         self.contract_full = self.Contract.create({
-            'name': 'Contrato Juan - Full Time',
+            'name': 'Contract Juan - Full Time',
             'employee_id': self.employee_full.id,
             'state': 'open',
             'wage': 1000.0,
             'contract_type_benefit': 'full_time',
         })
 
-        # Empleado 2 sin tipo de beneficio
+        # Employee 2 sin tipo de beneficio
         self.employee_none = self.Employee.create({
             'name': 'Pedro Gomez (Sin Tipo)',
         })
         self.contract_none = self.Contract.create({
-            'name': 'Contrato Pedro - Base',
+            'name': 'Contract Pedro - Base',
             'employee_id': self.employee_none.id,
             'state': 'open',
             'wage': 500.0,

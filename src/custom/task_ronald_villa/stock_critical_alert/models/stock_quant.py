@@ -25,8 +25,8 @@ class StockQuant(models.Model):
             if is_critical and not template.is_critical_stock:
                 template.is_critical_stock = True
                 template.message_post(
-                    body=_("Alerta de Stock Crítico: El nivel de inventario ha caído a %s (por debajo del umbral de %s).") % (qty_after, min_stock),
-                    subject=_("Alerta de Stock Crítico"),
+                    body=_("Alerta de Critical Stock: El nivel de inventario ha caído a %s (por debajo del umbral de %s).") % (qty_after, min_stock),
+                    subject=_("Alerta de Critical Stock"),
                     message_type='notification',
                     subtype_xmlid='mail.mt_note',
                 )

@@ -2,12 +2,12 @@ from odoo import models, fields
 
 class StockStorageTagWizard(models.TransientModel):
     _name = 'stock.storage.tag.wizard'
-    _description = 'Wizard para Asignar Etiquetas Masivamente'
+    _description = 'Wizard to Assign Tags in Bulk'
 
     tag_ids = fields.Many2many(
         'stock.storage.tag',
-        string='Etiquetas a Asignar',
-        help='Selecciona las etiquetas que deseas aplicar a los productos seleccionados.'
+        string='Tags to Assign',
+        help='Select the tags you want to apply to the selected products.'
     )
 
     def action_apply_tags(self):

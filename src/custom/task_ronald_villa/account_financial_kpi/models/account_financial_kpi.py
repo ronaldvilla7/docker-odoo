@@ -4,19 +4,19 @@ import ast
 
 class AccountFinancialKpi(models.Model):
     _name = 'account.financial.kpi'
-    _description = 'Indicador de Salud Financiera'
+    _description = 'Financial Health Indicator'
 
-    name = fields.Char(string='Nombre del Indicador', required=True)
-    formula = fields.Char(string='Fórmula de Cálculo', required=True, help='Ejemplo: bal("100") / bal("200"). Usa bal("codigo_cuenta") para obtener el balance.')
-    threshold_warning = fields.Float(string='Umbral de Advertencia (Amarillo)', required=True, default=0.0)
-    threshold_critical = fields.Float(string='Umbral Crítico (Rojo)', required=True, default=0.0)
+    name = fields.Char(string='Indicator Name', required=True)
+    formula = fields.Char(string='Calculation Formula', required=True, help='Example: bal("100") / bal("200"). Use bal("account_code") to get the balance.')
+    threshold_warning = fields.Float(string='Warning Threshold (Yellow)', required=True, default=0.0)
+    threshold_critical = fields.Float(string='Critical Threshold (Red)', required=True, default=0.0)
     threshold_direction = fields.Selection([
-        ('greater_is_better', 'Mayor es Mejor (Ej: Margen)'),
-        ('lower_is_better', 'Menor es Mejor (Ej: Deuda)')
-    ], string='Dirección de Umbrales', required=True, default='greater_is_better')
+        ('greater_is_better', 'Higher is Better (e.g. Margin)'),
+        ('lower_is_better', 'Lower is Better (e.g. Debt)')
+    ], string='Threshold Direction', required=True, default='greater_is_better')
     
-    current_value = fields.Float(string='Valor Actual', compute='_compute_kpi_value')
-    color = fields.Integer(string='Estado (Color)', compute='_compute_kpi_value')
+    current_value = fields.Float(string='Current Value', compute='_compute_kpi_value')
+    color = fields.Integer(string='Status (Color)', compute='_compute_kpi_value')
 
     @api.depends('formula', 'threshold_warning', 'threshold_critical', 'threshold_direction')
     def _compute_kpi_value(self):

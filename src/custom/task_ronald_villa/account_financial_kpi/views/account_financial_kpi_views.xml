@@ -5,7 +5,7 @@
         <field name="name">account.financial.kpi.kanban</field>
         <field name="model">account.financial.kpi</field>
         <field name="arch" type="xml">
-            <kanban string="Indicadores Financieros" create="1">
+            <kanban string="Financial Indicators" create="1">
                 <field name="name"/>
                 <field name="current_value"/>
                 <field name="color"/>
@@ -32,7 +32,7 @@
         <field name="name">account.financial.kpi.tree</field>
         <field name="model">account.financial.kpi</field>
         <field name="arch" type="xml">
-            <tree string="Configuración de KPIs">
+            <tree string="KPIs Configuration">
                 <field name="name"/>
                 <field name="formula"/>
                 <field name="current_value"/>
@@ -45,18 +45,18 @@
         <field name="name">account.financial.kpi.form</field>
         <field name="model">account.financial.kpi</field>
         <field name="arch" type="xml">
-            <form string="Configuración de KPI">
+            <form string="KPI Configuration">
                 <sheet>
                     <div class="oe_title">
                         <label for="name" class="oe_edit_only"/>
-                        <h1><field name="name" placeholder="Ej: Liquidez Corriente"/></h1>
+                        <h1><field name="name" placeholder="e.g., Current Liquidity"/></h1>
                     </div>
                     <group>
-                        <group name="formula_group" string="Datos y Cálculo">
+                        <group name="formula_group" string="Data and Calculation">
                             <field name="formula" placeholder="bal('11') / bal('21')"/>
                             <field name="current_value" readonly="1" force_save="1"/>
                         </group>
-                        <group name="thresholds_group" string="Umbrales (Semáforo)">
+                        <group name="thresholds_group" string="Thresholds (Traffic Light)">
                             <field name="threshold_direction"/>
                             <field name="threshold_warning"/>
                             <field name="threshold_critical"/>
@@ -74,7 +74,7 @@
         <field name="view_mode">kanban,tree,form</field>
         <field name="help" type="html">
           <p class="o_view_nocontent_smiling_face">
-            Crear el primer Indicador Financiero (KPI)
+            Create the first Financial KPI
           </p>
         </field>
     </record>
@@ -89,14 +89,14 @@
     <!-- Menu Items -->
     <!-- Dashboard -> Reporting -->
     <menuitem id="menu_account_financial_kpi_dashboard"
-              name="Salud Financiera (KPIs)"
+              name="Financial Health (KPIs)"
               parent="account.menu_finance_reports"
               action="action_account_financial_kpi_dashboard"
               sequence="105"/>
 
     <!-- Configuration -> Settings -->
     <menuitem id="menu_account_financial_kpi_config"
-              name="Indicadores Financieros"
+              name="Financial Indicators"
               parent="account.menu_finance_configuration"
               action="action_account_financial_kpi_config"
               sequence="110"/>

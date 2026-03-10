@@ -1,0 +1,69 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_storage_tags
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-10 12:00+0000\n"
+"PO-Revision-Date: 2024-03-10 12:00+0000\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_VE\n"
+
+#. module: stock_storage_tags
+msgid "Assign"
+msgstr "Asignar"
+
+#. module: stock_storage_tags
+msgid "Assign Storage Tags"
+msgstr "Asignar Etiquetas de Almacenamiento"
+
+#. module: stock_storage_tags
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: stock_storage_tags
+msgid "Configuration"
+msgstr "Configuración"
+
+#. module: stock_storage_tags
+msgid "Description"
+msgstr "Descripción"
+
+#. module: stock_storage_tags
+msgid "Dynamic tags to organize the product in the warehouse."
+msgstr "Etiquetas dinámicas para organizar el producto en almacén."
+
+#. module: stock_storage_tags
+msgid "Index Color"
+msgstr "Color de Índice"
+
+#. module: stock_storage_tags
+msgid "Select the tags you want to apply to the selected products."
+msgstr "Selecciona las etiquetas que deseas aplicar a los productos seleccionados."
+
+#. module: stock_storage_tags
+msgid "Storage Tag"
+msgstr "Etiqueta de Almacenamiento"
+
+#. module: stock_storage_tags
+msgid "Storage Tags"
+msgstr "Etiquetas de Almacenamiento"
+
+#. module: stock_storage_tags
+msgid "Tag Name"
+msgstr "Nombre de la Etiqueta"
+
+#. module: stock_storage_tags
+msgid "Tags to Assign"
+msgstr "Etiquetas a Asignar"
+
+#. module: stock_storage_tags
+msgid "Wizard to Assign Tags in Bulk"
+msgstr "Wizard para Asignar Etiquetas Masivamente"
+

@@ -5,6 +5,6 @@ class ProductTemplate(models.Model):
 
     storage_tag_ids = fields.Many2many(
         'stock.storage.tag',
-        string='Etiquetas de Almacenamiento',
-        help='Etiquetas dinámicas para organizar el producto en almacén.'
+        string='Storage Tags',
+        help='Dynamic tags to organize the product in the warehouse.'
     )

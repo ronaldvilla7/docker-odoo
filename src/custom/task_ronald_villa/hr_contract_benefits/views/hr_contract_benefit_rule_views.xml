@@ -5,7 +5,7 @@
         <field name="name">hr.contract.benefit.rule.list</field>
         <field name="model">hr.contract.benefit.rule</field>
         <field name="arch" type="xml">
-            <tree string="Reglas de Beneficio">
+            <tree string="Benefit Rules">
                 <field name="name"/>
                 <field name="contract_type_benefit"/>
                 <field name="amount_type"/>
@@ -19,19 +19,19 @@
         <field name="name">hr.contract.benefit.rule.form</field>
         <field name="model">hr.contract.benefit.rule</field>
         <field name="arch" type="xml">
-            <form string="Regla de Beneficio">
+            <form string="Benefit Rule">
                 <sheet>
-                    <widget name="web_ribbon" title="Archivado" bg_color="bg-danger" invisible="active"/>
+                    <widget name="web_ribbon" title="Archived" bg_color="bg-danger" invisible="active"/>
                     <div class="oe_title">
                         <label for="name" class="oe_edit_only"/>
-                        <h1><field name="name" placeholder="Ej: Bono de Alimentación"/></h1>
+                        <h1><field name="name" placeholder="e.g., Food Bonus"/></h1>
                     </div>
                     <group>
-                        <group name="left" string="Criterio de Aplicación">
+                        <group name="left" string="Application Criterion">
                             <field name="contract_type_benefit"/>
                             <field name="active" invisible="1"/>
                         </group>
-                        <group name="right" string="Cálculo Monetario">
+                        <group name="right" string="Monetary Calculation">
                             <field name="amount_type" widget="radio"/>
                             <field name="amount"/>
                         </group>
@@ -43,7 +43,7 @@
 
     <!-- Acción de Ventana -->
     <record id="action_hr_contract_benefit_rule" model="ir.actions.act_window">
-        <field name="name">Reglas de Beneficios</field>
+        <field name="name">Benefit Rules</field>
         <field name="res_model">hr.contract.benefit.rule</field>
         <field name="view_mode">tree,form</field>
     </record>

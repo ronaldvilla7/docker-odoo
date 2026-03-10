@@ -5,7 +5,7 @@
         <field name="name">stock.storage.tag.tree</field>
         <field name="model">stock.storage.tag</field>
         <field name="arch" type="xml">
-            <tree string="Etiquetas de Almacenamiento">
+            <tree string="Storage Tags">
                 <field name="name"/>
                 <field name="color" widget="color_picker"/>
                 <field name="description"/>
@@ -18,7 +18,7 @@
         <field name="name">stock.storage.tag.form</field>
         <field name="model">stock.storage.tag</field>
         <field name="arch" type="xml">
-            <form string="Etiqueta de Almacenamiento">
+            <form string="Storage Tag">
                 <sheet>
                     <group>
                         <group>
@@ -36,14 +36,14 @@
 
     <!-- Acción -->
     <record id="action_stock_storage_tag" model="ir.actions.act_window">
-        <field name="name">Etiquetas de Almacenamiento</field>
+        <field name="name">Storage Tags</field>
         <field name="res_model">stock.storage.tag</field>
         <field name="view_mode">tree,form</field>
     </record>
 
-    <!-- Menú bajo Configuración de Inventario -->
+    <!-- Menú bajo Configuration de Inventario -->
     <menuitem id="menu_stock_storage_tag"
-              name="Etiquetas de Almacenamiento"
+              name="Storage Tags"
               parent="stock.menu_stock_config_settings"
               action="action_stock_storage_tag"
               sequence="50"/>

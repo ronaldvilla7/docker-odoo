@@ -14,7 +14,7 @@ class TestDiscountRules(TransactionCase):
 
         # Crear Tipos de Cliente
         self.partner_retail = self.Partner.create({
-            'name': 'Cliente Minorista',
+            'name': 'Cliente Retail',
             'customer_type': 'retail'
         })
         self.partner_vip = self.Partner.create({
@@ -30,7 +30,7 @@ class TestDiscountRules(TransactionCase):
 
         # Crear reglas de descuento
         self.rule_retail = self.DiscountRule.create({
-            'name': 'Regla Minorista',
+            'name': 'Regla Retail',
             'customer_type': 'retail',
             'discount_percentage': 0.0
         })
@@ -58,7 +58,7 @@ class TestDiscountRules(TransactionCase):
         self.assertEqual(move.invoice_line_ids[0].discount, 15.0, "El descuento para VIP debe ser del 15%.")
 
     def test_no_discount_applied_on_retail(self):
-        """Prueba que no se aplique descuento o se aplique 0% a cliente Minorista"""
+        """Prueba que no se aplique descuento o se aplique 0% a cliente Retail"""
         move = self.AccountMove.create({
             'move_type': 'out_invoice',
             'partner_id': self.partner_retail.id,

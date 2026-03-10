@@ -4,7 +4,7 @@
     'category': 'Accounting/Accounting',
     'summary': 'Aplicación automática de descuentos en facturas según el tipo de cliente',
     'description': """
-        Módulo para configurar reglas de descuento basadas en el tipo de cliente (Minorista, Mayorista, VIP).
+        Módulo para configurar reglas de descuento basadas en el tipo de cliente (Retail, Wholesale, VIP).
         Aplica los descuentos automáticamente al validar facturas o de forma manual.
     """,
     'author': 'Ronald Villa',

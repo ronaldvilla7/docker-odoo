@@ -2,13 +2,13 @@ from odoo import models, fields
 
 class AccountDiscountRule(models.Model):
     _name = 'account.discount.rule'
-    _description = 'Regla de Descuento por Tipo de Cliente'
+    _description = 'Discount Rule by Customer Type'
 
-    name = fields.Char(string='Descripción', required=True)
+    name = fields.Char(string='Description', required=True)
     customer_type = fields.Selection([
-        ('retail', 'Minorista'),
-        ('wholesale', 'Mayorista'),
+        ('retail', 'Retail'),
+        ('wholesale', 'Wholesale'),
         ('vip', 'VIP')
-    ], string='Tipo de Cliente', required=True)
-    discount_percentage = fields.Float(string='Porcentaje de Descuento (%)', required=True, default=0.0)
-    active = fields.Boolean(string='Activo', default=True)
+    ], string='Customer Type', required=True)
+    discount_percentage = fields.Float(string='Discount Percentage (%)', required=True, default=0.0)
+    active = fields.Boolean(string='Active', default=True)
