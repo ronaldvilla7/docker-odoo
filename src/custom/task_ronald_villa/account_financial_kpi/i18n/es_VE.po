@@ -4,11 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 17.0-20260308\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 12:00+0000\n"
-"PO-Revision-Date: 2024-03-10 12:00+0000\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-03-10 14:14+0000\n"
+"PO-Revision-Date: 2026-03-10 14:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (VE)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -16,86 +17,144 @@ msgstr ""
 "Language: es_VE\n"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__formula
 msgid "Calculation Formula"
 msgstr "Fórmula de Cálculo"
 
 #. module: account_financial_kpi
+#: model:ir.actions.act_window,name:account_financial_kpi.action_account_financial_kpi_config
+msgid "Configurar KPIs"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model_terms:ir.actions.act_window,help:account_financial_kpi.action_account_financial_kpi_dashboard
 msgid "Create the first Financial KPI"
 msgstr "Crear el primer Indicador Financiero (KPI)"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__threshold_critical
 msgid "Critical Threshold (Red)"
 msgstr "Umbral Crítico (Rojo)"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__current_value
 msgid "Current Value"
 msgstr "Valor Actual"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_form
 msgid "Data and Calculation"
 msgstr "Datos y Cálculo"
 
 #. module: account_financial_kpi
-msgid "Example: bal(\"100\") / bal(\"200\"). Use bal(\"account_code\") to get the balance."
-msgstr "Ejemplo: bal(\"100\") / bal(\"200\"). Usa bal(\"codigo_cuenta\") para obtener el balance."
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__display_name
+msgid "Display Name"
+msgstr ""
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,help:account_financial_kpi.field_account_financial_kpi__formula
+msgid ""
+"Example: bal(\"100\") / bal(\"200\"). Use bal(\"account_code\") to get the "
+"balance."
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.ui.menu,name:account_financial_kpi.menu_account_financial_kpi_dashboard
 msgid "Financial Health (KPIs)"
 msgstr "Salud Financiera (KPIs)"
 
 #. module: account_financial_kpi
+#: model:ir.model,name:account_financial_kpi.model_account_financial_kpi
 msgid "Financial Health Indicator"
 msgstr "Indicador de Salud Financiera"
 
 #. module: account_financial_kpi
+#: model:ir.ui.menu,name:account_financial_kpi.menu_account_financial_kpi_config
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_kanban
 msgid "Financial Indicators"
 msgstr "Indicadores Financieros"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields.selection,name:account_financial_kpi.selection__account_financial_kpi__threshold_direction__greater_is_better
 msgid "Higher is Better (e.g. Margin)"
 msgstr "Mayor es Mejor (Ej: Margen)"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__id
+msgid "ID"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__name
 msgid "Indicator Name"
 msgstr "Nombre del Indicador"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_form
 msgid "KPI Configuration"
 msgstr "Configuración de KPI"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_tree
 msgid "KPIs Configuration"
 msgstr "Configuración de KPIs"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields.selection,name:account_financial_kpi.selection__account_financial_kpi__threshold_direction__lower_is_better
 msgid "Lower is Better (e.g. Debt)"
 msgstr "Menor es Mejor (Ej: Deuda)"
 
 #. module: account_financial_kpi
+#: model:ir.actions.act_window,name:account_financial_kpi.action_account_financial_kpi_dashboard
+msgid "Salud Financiera"
+msgstr ""
+
+#. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__color
 msgid "Status (Color)"
 msgstr "Estado (Color)"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__threshold_direction
 msgid "Threshold Direction"
 msgstr "Dirección de Umbrales"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_form
 msgid "Thresholds (Traffic Light)"
 msgstr "Umbrales (Semáforo)"
 
 #. module: account_financial_kpi
+#: model:ir.model.fields,field_description:account_financial_kpi.field_account_financial_kpi__threshold_warning
 msgid "Warning Threshold (Yellow)"
 msgstr "Umbral de Advertencia (Amarillo)"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_form
 msgid "bal('11') / bal('21')"
 msgstr "bal('11') / bal('21')"
 
 #. module: account_financial_kpi
+#: model_terms:ir.ui.view,arch_db:account_financial_kpi.view_account_financial_kpi_form
 msgid "e.g., Current Liquidity"
 msgstr "Ej: Liquidez Corriente"
-
-#. module: account_financial_kpi
-msgid "threshold_warning', 'threshold_critical', 'threshold_direction"
-msgstr "threshold_warning', 'threshold_critical', 'threshold_direction"
-

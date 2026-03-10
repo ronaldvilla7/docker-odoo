@@ -4,11 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 17.0-20260308\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 12:00+0000\n"
-"PO-Revision-Date: 2024-03-10 12:00+0000\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-03-10 14:13+0000\n"
+"PO-Revision-Date: 2026-03-10 14:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (VE)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -16,50 +17,109 @@ msgstr ""
 "Language: es_VE\n"
 
 #. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__active
 msgid "Active"
 msgstr "Activo"
 
 #. module: account_discount_rules
+#: model:ir.model,name:account_discount_rules.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__customer_type
+#: model:ir.model.fields,field_description:account_discount_rules.field_res_partner__customer_type
+#: model:ir.model.fields,field_description:account_discount_rules.field_res_users__customer_type
 msgid "Customer Type"
 msgstr "Tipo de Cliente"
 
 #. module: account_discount_rules
+#: model:ir.model.fields,help:account_discount_rules.field_res_partner__customer_type
+#: model:ir.model.fields,help:account_discount_rules.field_res_users__customer_type
 msgid "Define the discount policies applicable to this customer."
 msgstr "Define las políticas de descuento aplicables a este cliente."
 
 #. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__name
 msgid "Description"
 msgstr "Descripción"
 
 #. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__discount_percentage
 msgid "Discount Percentage (%)"
 msgstr "Porcentaje de Descuento (%)"
 
 #. module: account_discount_rules
+#: model_terms:ir.ui.view,arch_db:account_discount_rules.view_account_discount_rule_form
 msgid "Discount Rule"
 msgstr "Regla de Descuento"
 
 #. module: account_discount_rules
+#: model:ir.model,name:account_discount_rules.model_account_discount_rule
 msgid "Discount Rule by Customer Type"
 msgstr "Regla de Descuento por Tipo de Cliente"
 
 #. module: account_discount_rules
+#: model:ir.actions.act_window,name:account_discount_rules.action_account_discount_rule
+#: model:ir.ui.menu,name:account_discount_rules.menu_account_discount_rules
+#: model_terms:ir.ui.view,arch_db:account_discount_rules.view_account_discount_rule_tree
 msgid "Discount Rules"
 msgstr "Reglas de Descuento"
 
 #. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__id
+msgid "ID"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model,name:account_discount_rules.model_account_move
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model.fields,field_description:account_discount_rules.field_account_discount_rule__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: account_discount_rules
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__account_discount_rule__customer_type__retail
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__res_partner__customer_type__retail
 msgid "Retail"
 msgstr "Minorista"
 
 #. module: account_discount_rules
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__account_discount_rule__customer_type__vip
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__res_partner__customer_type__vip
 msgid "VIP"
 msgstr "VIP"
 
 #. module: account_discount_rules
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__account_discount_rule__customer_type__wholesale
+#: model:ir.model.fields.selection,name:account_discount_rules.selection__res_partner__customer_type__wholesale
 msgid "Wholesale"
 msgstr "Mayorista"
 
 #. module: account_discount_rules
+#: model_terms:ir.ui.view,arch_db:account_discount_rules.view_account_discount_rule_form
 msgid "e.g., Regular VIP Discount"
 msgstr "Ej: Descuento Regulares VIP"
-

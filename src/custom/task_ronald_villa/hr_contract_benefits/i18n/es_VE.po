@@ -4,11 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 17.0-20260308\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 12:00+0000\n"
-"PO-Revision-Date: 2024-03-10 12:00+0000\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-03-10 14:04+0000\n"
+"PO-Revision-Date: 2026-03-10 14:04+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (VE)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -16,190 +17,297 @@ msgstr ""
 "Language: es_VE\n"
 
 #. module: hr_contract_benefits
-msgid "=', 'open"
-msgstr "=', 'open"
-
-#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__active
 msgid "Active"
 msgstr "Activo"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__amount
 msgid "Amount"
 msgstr "Monto"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__contract_type_benefit
 msgid "Applicable To (Contract Type)"
 msgstr "Aplicable a (Tipo de Contrato)"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_form
 msgid "Application Criterion"
 msgstr "Criterio de Aplicación"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_form
 msgid "Archived"
 msgstr "Archivado"
 
 #. module: hr_contract_benefits
+#: model:ir.model,name:hr_contract_benefits.model_hr_contract_benefit_rule
 msgid "Automatic Labor Benefit Rule"
 msgstr "Regla Automática de Beneficio Laboral"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__name
 msgid "Benefit Name"
 msgstr "Nombre del Beneficio"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_form
 msgid "Benefit Rule"
 msgstr "Regla de Beneficio"
 
 #. module: hr_contract_benefits
-msgid "Benefit Rules"
-msgstr "Reglas de Beneficio"
-
-#. module: hr_contract_benefits
+#: model:ir.actions.act_window,name:hr_contract_benefits.action_hr_contract_benefit_rule
+#: model:ir.ui.menu,name:hr_contract_benefits.menu_hr_contract_benefit_rule
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_list
 msgid "Benefit Rules"
 msgstr "Reglas de Beneficios"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Calculate Payslip"
 msgstr "Calcular Boleta"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__amount_type
 msgid "Calculation Type"
 msgstr "Tipo de Cálculo"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_payslip__state__cancel
 msgid "Cancelled"
 msgstr "Cancelado"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,help:hr_contract_benefits.field_hr_contract__contract_type_benefit
 msgid "Classification used for automatic payroll and benefit rules."
 msgstr "Clasificación utilizada para las reglas automáticas de nómina y beneficios."
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__name
 msgid "Concept"
 msgstr "Concepto"
 
 #. module: hr_contract_benefits
+#: model:ir.ui.menu,name:hr_contract_benefits.menu_hr_payslip_configuration
 msgid "Configuration"
 msgstr "Configuración"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Confirm"
 msgstr "Confirmar"
 
 #. module: hr_contract_benefits
+#: model:ir.model,name:hr_contract_benefits.model_hr_contract
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__contract_id
 msgid "Contract"
-msgstr "Contrato"
+msgstr "Contrato del empleado"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract__contract_type_benefit
 msgid "Contract Type (Benefits)"
 msgstr "Tipo de Contrato (Beneficios)"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__create_uid
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__create_uid
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__create_date
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__create_date
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_contract_benefits
+#. odoo-python
+#: code:addons/hr_contract_benefits/models/hr_payslip.py:0
+#, python-format
+msgid "Debes seleccionar un contrato para generar el recibo de nómina."
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__display_name
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__display_name
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_payslip__state__done
 msgid "Done"
 msgstr "Realizado"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_payslip__state__draft
 msgid "Draft"
 msgstr "Borrador"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__employee_id
 msgid "Employee"
 msgstr "Empleado"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__date_to
 msgid "End Date"
 msgstr "Fecha Fin"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__amount_type__fixed
 msgid "Fixed Amount"
 msgstr "Monto Fijo"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract__contract_type_benefit__full_time
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__contract_type_benefit__full_time
 msgid "Full Time"
 msgstr "Tiempo Completo"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__id
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__id
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract__contract_type_benefit__internship
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__contract_type_benefit__internship
 msgid "Internship/Practices"
 msgstr "Pasantía/Prácticas"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__is_base
 msgid "Is Base Salary"
 msgstr "Es Salario Base"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__write_uid
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__write_uid
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__write_date
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__write_date
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_form
 msgid "Monetary Calculation"
 msgstr "Cálculo Monetario"
 
 #. module: hr_contract_benefits
+#. odoo-python
+#: code:addons/hr_contract_benefits/models/hr_payslip.py:0
+#, python-format
+msgid "Nuevo"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract__contract_type_benefit__part_time
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__contract_type_benefit__part_time
 msgid "Part Time"
 msgstr "Medio Tiempo"
 
 #. module: hr_contract_benefits
+#: model:ir.ui.menu,name:hr_contract_benefits.menu_hr_payslip_root
 msgid "Payroll"
 msgstr "Nómina"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__line_ids
+msgid "Payroll Lines"
+msgstr "Líneas de Nómina"
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip_line__payslip_id
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Payslip"
 msgstr "Recibo de Nómina"
 
 #. module: hr_contract_benefits
+#: model:ir.model,name:hr_contract_benefits.model_hr_payslip
 msgid "Payslip (Custom CE)"
 msgstr "Recibo de Nómina (Custom CE)"
 
 #. module: hr_contract_benefits
+#: model:ir.model,name:hr_contract_benefits.model_hr_payslip_line
 msgid "Payslip Line"
 msgstr "Línea de Recibo de Nómina"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Payslip Lines"
 msgstr "Líneas de Pago"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__name
 msgid "Payslip Reference"
 msgstr "Referencia del Recibo"
 
 #. module: hr_contract_benefits
+#: model:ir.actions.act_window,name:hr_contract_benefits.action_hr_payslip
+#: model:ir.ui.menu,name:hr_contract_benefits.menu_hr_payslip_main
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_list
 msgid "Payslips"
 msgstr "Recibos de Nómina"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__amount_type__percent
 msgid "Percentage of Base Salary"
 msgstr "Porcentaje del Salario Base"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Reference (e.g. PAYROLL-2023-OCT)"
 msgstr "Referencia (Ej: NÓMINA-2023-OCT)"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
 msgid "Set to Draft"
 msgstr "Volver a Borrador"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__date_from
 msgid "Start Date"
 msgstr "Fecha Inicio"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_payslip__state
 msgid "Status"
 msgstr "Estado"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract__contract_type_benefit__temporary
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_contract_benefit_rule__contract_type_benefit__temporary
 msgid "Temporary"
 msgstr "Temporal"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_payslip_form
+msgid "Total Pagar"
+msgstr ""
+
+#. module: hr_contract_benefits
+#: model:ir.model.fields,field_description:hr_contract_benefits.field_hr_contract_benefit_rule__amount
 msgid "Value (Amount or %)"
 msgstr "Valor (Monto o %)"
 
 #. module: hr_contract_benefits
+#: model:ir.model.fields.selection,name:hr_contract_benefits.selection__hr_payslip__state__verify
 msgid "Waiting"
 msgstr "En Espera"
 
 #. module: hr_contract_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_benefits.view_hr_contract_benefit_rule_form
 msgid "e.g., Food Bonus"
 msgstr "Ej: Bono de Alimentación"
-
-#. module: hr_contract_benefits
-msgid "payslip_id', string='Payroll Lines"
-msgstr "payslip_id', string='Líneas de Nómina"
-

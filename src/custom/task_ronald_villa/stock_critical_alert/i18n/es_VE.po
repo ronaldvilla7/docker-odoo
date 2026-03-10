@@ -4,11 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 17.0-20260308\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 12:00+0000\n"
-"PO-Revision-Date: 2024-03-10 12:00+0000\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-03-10 14:14+0000\n"
+"PO-Revision-Date: 2026-03-10 14:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (VE)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -16,42 +17,77 @@ msgstr ""
 "Language: es_VE\n"
 
 #. module: stock_critical_alert
-msgid "=', 'notification"
-msgstr "=', 'notification"
+#. odoo-python
+#: code:addons/stock_critical_alert/models/stock_quant.py:0
+#, python-format
+msgid "Alerta de Critical Stock"
+msgstr ""
 
 #. module: stock_critical_alert
-msgid "=', self.product_tmpl.id), ('model', '=', 'product.template"
-msgstr "=', self.product_tmpl.id), ('model', '=', 'product.template"
+#. odoo-python
+#: code:addons/stock_critical_alert/models/stock_quant.py:0
+#, python-format
+msgid ""
+"Alerta de Critical Stock: El nivel de inventario ha caído a %s (por debajo "
+"del umbral de %s)."
+msgstr ""
 
 #. module: stock_critical_alert
+#: model_terms:ir.ui.view,arch_db:stock_critical_alert.view_product_template_search_critical
 msgid "Category"
 msgstr "Categoría"
 
 #. module: stock_critical_alert
+#: model:ir.ui.menu,name:stock_critical_alert.menu_stock_critical_dashboard
 msgid "Critical Stock"
 msgstr "Stock Crítico"
 
 #. module: stock_critical_alert
+#: model_terms:ir.ui.view,arch_db:stock_critical_alert.view_product_template_search_critical
 msgid "Group By"
 msgstr "Group By"
 
 #. module: stock_critical_alert
+#: model:ir.model.fields,field_description:stock_critical_alert.field_product_product__is_critical_stock
+#: model:ir.model.fields,field_description:stock_critical_alert.field_product_template__is_critical_stock
+#: model_terms:ir.ui.view,arch_db:stock_critical_alert.view_product_template_search_critical
 msgid "In Critical Stock"
 msgstr "En Stock Crítico"
 
 #. module: stock_critical_alert
+#: model:ir.model.fields,help:stock_critical_alert.field_product_product__is_critical_stock
+#: model:ir.model.fields,help:stock_critical_alert.field_product_template__is_critical_stock
 msgid "Indicates if the product is currently below minimum stock"
 msgstr "Indica si el producto está actualmente por debajo del stock mínimo"
 
 #. module: stock_critical_alert
+#: model:ir.model.fields,field_description:stock_critical_alert.field_product_product__config_min_stock
+#: model:ir.model.fields,field_description:stock_critical_alert.field_product_template__config_min_stock
 msgid "Minimum Stock"
 msgstr "Stock Mínimo"
 
 #. module: stock_critical_alert
+#: model:ir.model,name:stock_critical_alert.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_critical_alert
+#: model:ir.model,name:stock_critical_alert.model_stock_quant
+msgid "Quants"
+msgstr ""
+
+#. module: stock_critical_alert
+#: model_terms:ir.ui.view,arch_db:stock_critical_alert.view_product_template_form_inherit_critical_stock
 msgid "Stock Alerts"
 msgstr "Alertas de Stock"
 
 #. module: stock_critical_alert
+#: model:ir.actions.act_window,name:stock_critical_alert.action_stock_critical_dashboard
+msgid "Tablero de Critical Stock"
+msgstr ""
+
+#. module: stock_critical_alert
+#: model:ir.model.fields,help:stock_critical_alert.field_product_product__config_min_stock
+#: model:ir.model.fields,help:stock_critical_alert.field_product_template__config_min_stock
 msgid "Threshold to generate critical stock alerts"
 msgstr "Umbral para generar alertas de stock crítico"
-

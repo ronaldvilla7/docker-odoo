@@ -4,11 +4,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 17.0\n"
+"Project-Id-Version: Odoo Server 17.0-20260308\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-10 12:00+0000\n"
-"PO-Revision-Date: 2024-03-10 12:00+0000\n"
-"Language-Team: \n"
+"POT-Creation-Date: 2026-03-10 14:14+0000\n"
+"PO-Revision-Date: 2026-03-10 14:14+0000\n"
+"Last-Translator: \n"
+"Language-Team: Spanish (VE)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -16,54 +17,114 @@ msgstr ""
 "Language: es_VE\n"
 
 #. module: stock_storage_tags
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_stock_storage_tag_wizard_form
 msgid "Assign"
 msgstr "Asignar"
 
 #. module: stock_storage_tags
+#: model:ir.actions.act_window,name:stock_storage_tags.action_open_stock_storage_tag_wizard
+msgid "Assign Etiquetas"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_stock_storage_tag_wizard_form
 msgid "Assign Storage Tags"
 msgstr "Asignar Etiquetas de Almacenamiento"
 
 #. module: stock_storage_tags
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_stock_storage_tag_wizard_form
 msgid "Cancel"
 msgstr "Cancelar"
 
 #. module: stock_storage_tags
-msgid "Configuration"
-msgstr "Configuración"
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__create_uid
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__create_uid
+msgid "Created by"
+msgstr ""
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__create_date
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__description
 msgid "Description"
 msgstr "Descripción"
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__display_name
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model:ir.model.fields,help:stock_storage_tags.field_product_product__storage_tag_ids
+#: model:ir.model.fields,help:stock_storage_tags.field_product_template__storage_tag_ids
 msgid "Dynamic tags to organize the product in the warehouse."
 msgstr "Etiquetas dinámicas para organizar el producto en almacén."
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__id
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__id
+msgid "ID"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__color
 msgid "Index Color"
 msgstr "Color de Índice"
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__write_uid
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__write_date
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: stock_storage_tags
+#: model:ir.model,name:stock_storage_tags.model_product_template
+msgid "Product"
+msgstr "Producto"
+
+#. module: stock_storage_tags
+#: model:ir.model.fields,help:stock_storage_tags.field_stock_storage_tag_wizard__tag_ids
 msgid "Select the tags you want to apply to the selected products."
 msgstr "Selecciona las etiquetas que deseas aplicar a los productos seleccionados."
 
 #. module: stock_storage_tags
+#: model:ir.model,name:stock_storage_tags.model_stock_storage_tag
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_product_template_search_inherit_tags
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_stock_storage_tag_form
 msgid "Storage Tag"
 msgstr "Etiqueta de Almacenamiento"
 
 #. module: stock_storage_tags
+#: model:ir.actions.act_window,name:stock_storage_tags.action_stock_storage_tag
+#: model:ir.model.fields,field_description:stock_storage_tags.field_product_product__storage_tag_ids
+#: model:ir.model.fields,field_description:stock_storage_tags.field_product_template__storage_tag_ids
+#: model:ir.ui.menu,name:stock_storage_tags.menu_stock_storage_tag
+#: model_terms:ir.ui.view,arch_db:stock_storage_tags.view_stock_storage_tag_tree
 msgid "Storage Tags"
 msgstr "Etiquetas de Almacenamiento"
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag__name
 msgid "Tag Name"
 msgstr "Nombre de la Etiqueta"
 
 #. module: stock_storage_tags
+#: model:ir.model.fields,field_description:stock_storage_tags.field_stock_storage_tag_wizard__tag_ids
 msgid "Tags to Assign"
 msgstr "Etiquetas a Asignar"
 
 #. module: stock_storage_tags
+#: model:ir.model,name:stock_storage_tags.model_stock_storage_tag_wizard
 msgid "Wizard to Assign Tags in Bulk"
 msgstr "Wizard para Asignar Etiquetas Masivamente"
-
