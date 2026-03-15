@@ -137,6 +137,20 @@ def bash_update_modules(dbname: str, modules: str = "all"):
     )
 
 
+def run_tests(dbname: str, module: str, tags: str = None):
+    PROJECT_NAME = os.getenv("PROJECT_NAME")
+    tags_cmd = f"--test-tags {tags}" if tags else f"--test-tags /{module}"
+    
+    # Usamos docker compose run para mayor aislamiento y evitar conflictos de puerto/bloqueos
+    # Si el contenedor principal está corriendo, es recomendable detenerlo para evitar "SerializationFailure"
+    cmd = (
+        f"docker compose -f docker-compose.app.yml run --rm odoo odoo --test-enable --stop-after-init "
+        f"--workers=0 -d {dbname} -u {module} {tags_cmd}"
+    )
+    print(f"Executing: {cmd}")
+    os.system(cmd)
+
+
 def build_odoo(no_cache):
     ODOO_VERSION = os.getenv("ODOO_VERSION")
     RESOURCES_DIR = "/.resources"
@@ -426,6 +440,11 @@ def main():
         help="Modules to update, default all. Use comma to separate multiple modules",
     )
 
+    test_parser = subparsers.add_parser("test", help="Run Odoo tests")
+    test_parser.add_argument("-d", required=True, help="Database name")
+    test_parser.add_argument("-m", required=True, help="Module to test")
+    test_parser.add_argument("--tags", help="Optional test tags (e.g. .TestDiscountRules)")
+
     # Parsear los argumentos
     args = parser.parse_args()
 
@@ -458,6 +477,10 @@ def main():
 
     if args.action == "init":
         init_addons()
+        return True
+
+    if args.action == "test":
+        run_tests(args.d, args.m, args.tags)
         return True
 
     if args.action == "psql":
